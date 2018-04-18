@@ -74,7 +74,7 @@
                             <artifactId>${project.artifactId}</artifactId>
                             <version>${project.version}</version>
                             <type>${project.packaging}</type>
-                            <destFileName>${project.artifactId}.${project.packaging}</destFileName>
+                            <destFileName>${app.name}.${project.packaging}</destFileName>
                             <outputDirectory>${sdk.dir}/data/apps/</outputDirectory>
                         </artifactItem>
                     </artifactItems>
