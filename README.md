@@ -2,7 +2,7 @@
 
 Maven archetype that generates maven modules for Hashgraph applications.
 
-This is a template for an alternative (arguably friendlier) setup for Hashgraph SDK based applications. It allows you to build and run hashgraph apps using the SDK more like an external resource rather than creating new modules along the demo apps inside the SDK directory structure.
+This is a template for an alternative (arguably friendlier) setup for Hashgraph SDK based applications. It allows you to build and run Hashgraph apps using the SDK more like an external resource rather than creating new modules along the demo apps inside the SDK directory structure.
 
 ### Install Hashgraph SDK
 Follow the pre-requisites to correctly install the SDK provided by Swirlds: https://dev.hashgraph.com/docs/installation
@@ -36,11 +36,11 @@ NOTE: ```swirldsSdkPath``` must point to the Swirlds SDK directory where you fin
 You can now import the module into your preferred IDE or just take a look at what has been generated in the directory named after your ```artifactId```.
 
 ### Run It
-To run the generated app, follow the steps below. You will find the same info in the README.md inside the newly generated module.
+To run the generated app, follow the steps below. You will find the same info in the ```README.md``` inside the newly generated module.
 
 #### Configure the SDK:
 Change the `config.txt` file found in the SDK as follows:
-   * comment the GameDemo.jar line and add a new app line for this application (replace ${appName} with value you chose above)
+   * comment the ```GameDemo.jar``` line and add a new app line for this application (replace ```${appName}``` with value you chose above)
 ```
 ...
 # app,		GameDemo.jar,		   9000, 9000
@@ -57,10 +57,10 @@ TLS, off
 ```
 mvn clean install
 ```
-This will package the app jar and copy it to the `apps` dir inside the Hashgraph sdk.
+This will package the app jar and copy it to the ```data/apps``` dir inside the Hashgraph SDK.
 
 #### Run from IntelliJ IDEA
-Replace ${appName} and ${swirdSdkPath} placeholders with values you chose above.
+Replace ```${appName}``` and ```${swirdSdkPath}``` placeholders with values you chose above.
 ```
 1. Run -> Edit Configurations...
 2. Add new Application cofiguration
@@ -72,7 +72,7 @@ Replace ${appName} and ${swirdSdkPath} placeholders with values you chose above.
 You should see four console windows and one main browser window.
 
 #### Run from command line
-To run it in the usual way, go to hashgraph sdk dir
+To run it in the usual way, go to Hashgraph SDK dir
 ```
 java -jar swirlds.jar
 ```
