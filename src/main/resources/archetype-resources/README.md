@@ -1,14 +1,15 @@
-Generated with ```swirlds-hashgraph-archetype```.
+#set( $H = '#' )
+Generated with swirlds-hashgraph-archetype.
 
-\#\#\#\# Hashgraph SDK
+1. Hashgraph SDK
 Make sure Hashgraph SDK is installed in ${swirdSdkPath} as described in https://dev.hashgraph.com/docs/installation/
 
-\#\#\#\# Configure the SDK:
-Change the `config.txt` file found in the SDK as follows:
+2. Configure the SDK
+Change the config.txt file found in the SDK as follows
    * comment the GameDemo.jar line and add a new app line for this application (${appName})
 ```
 ...
-\# app,		GameDemo.jar,		   9000, 9000
+$H app,		GameDemo.jar,		   9000, 9000
 app,        ${appName}.jar
 ...
 ```
@@ -17,23 +18,22 @@ app,        ${appName}.jar
 TLS, off
 ```
 
-\#\#\#\# Build it
+3. Build it
 ```
 mvn clean install
 ```
-This will package the app jar and copy it to the `apps` dir inside the Hashgraph sdk.
+This will package the app jar and copy it to the ```apps``` dir inside the Hashgraph sdk.
 
-\#\#\#\# Run from IntelliJ IDEA
-1. Run -> Edit Configurations...
-2. Add new Application cofiguration
-3. Main Class: ${appName}Main
-4. Working Directory: ${swirdSdkPath}
-5. Press "Run..." or "Debug..."
+4. Run from IntelliJ IDEA
+   * Run -> Edit Configurations...
+   * Add new Application cofiguration
+   * Main Class: ${appName}Main
+   * Working Directory: ${swirdSdkPath}
+   * Press "Run..." or "Debug..."
 
 You should see four console windows and one main browser window.
 
-\#\#\#\# Run from command line
-To run it in the usual way, go to hashgraph sdk dir
+Or to run from command line in the usual way, go to hashgraph sdk dir
 ```
 java -jar swirlds.jar
 ```
