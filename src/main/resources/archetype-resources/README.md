@@ -22,7 +22,7 @@ TLS, off
 ```
 mvn clean install
 ```
-This will package the app jar and copy it to the ```apps``` dir inside the Hashgraph sdk.
+This will package the app jar and copy it to the 'data/apps' dir inside the Hashgraph sdk.
 
 4. Run from IntelliJ IDEA
    * Run -> Edit Configurations...
@@ -38,4 +38,4 @@ Or to run from command line in the usual way, go to hashgraph sdk dir
 java -jar swirlds.jar
 ```
 
-NOTE: Every code change needs a `mvn clean install` before you run the app again
+NOTE: Every code change needs a 'mvn clean install' before you run the app again
