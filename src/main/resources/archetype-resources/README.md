@@ -1,14 +1,14 @@
 Generated with ```swirlds-hashgraph-archetype```.
 
-#### Hashgraph SDK
+\#\#\#\# Hashgraph SDK
 Make sure Hashgraph SDK is installed in ${swirdSdkPath} as described in https://dev.hashgraph.com/docs/installation/
 
-#### Configure the SDK:
-1. change the `config.txt` file found in the SDK as follows:
+\#\#\#\# Configure the SDK:
+Change the `config.txt` file found in the SDK as follows:
    * comment the GameDemo.jar line and add a new app line for this application (${appName})
 ```
 ...
-# app,		GameDemo.jar,		   9000, 9000
+\# app,		GameDemo.jar,		   9000, 9000
 app,        ${appName}.jar
 ...
 ```
@@ -16,13 +16,14 @@ app,        ${appName}.jar
 ```
 TLS, off
 ```
-#### Build it
+
+\#\#\#\# Build it
 ```
 mvn clean install
 ```
 This will package the app jar and copy it to the `apps` dir inside the Hashgraph sdk.
 
-#### Run from IntelliJ IDEA
+\#\#\#\# Run from IntelliJ IDEA
 1. Run -> Edit Configurations...
 2. Add new Application cofiguration
 3. Main Class: ${appName}Main
@@ -31,7 +32,7 @@ This will package the app jar and copy it to the `apps` dir inside the Hashgraph
 
 You should see four console windows and one main browser window.
 
-#### Run from command line
+\#\#\#\# Run from command line
 To run it in the usual way, go to hashgraph sdk dir
 ```
 java -jar swirlds.jar
