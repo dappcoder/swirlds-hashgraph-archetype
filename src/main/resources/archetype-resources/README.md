@@ -8,7 +8,7 @@ Make sure Hashgraph SDK is installed in ${swirdSdkPath} as described in https://
    * comment the GameDemo.jar line and add a new app line for this application (${appName})
 ```
 ...
-# app,        GameDemo.jar
+# app,		GameDemo.jar,		   9000, 9000
 app,        ${appName}.jar
 ...
 ```
