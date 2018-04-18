@@ -1,7 +1,6 @@
 # Swirlds Hashgraph Maven Archetype
 
-### Description
-Generate maven modules for Hashgraph applications using ```swirlds-hashgraph-archetype```.
+Maven archetype that generates maven modules for Hashgraph applications.
 
 This is a template for an alternative (arguably friendlier) setup for Hashgraph SDK based applications. It allows you to build and run hashgraph apps using the SDK more like an external resource rather than creating new modules along the demo apps inside the SDK directory structure.
 
@@ -41,7 +40,7 @@ To run the generated app, follow the steps below. You will find the same info in
 
 #### Configure the SDK:
 Change the `config.txt` file found in the SDK as follows:
-   * comment the GameDemo.jar line and add a new app line for this application (${appName})
+   * comment the GameDemo.jar line and add a new app line for this application (replace ${appName} with your chosen value above)
 ```
 ...
 # app,		GameDemo.jar,		   9000, 9000
@@ -61,11 +60,14 @@ mvn clean install
 This will package the app jar and copy it to the `apps` dir inside the Hashgraph sdk.
 
 #### Run from IntelliJ IDEA
+Replace ${appName} and ${swirdSdkPath} placeholders with your chosen values above.
+```
 1. Run -> Edit Configurations...
 2. Add new Application cofiguration
 3. Main Class: ${appName}Main
 4. Working Directory: ${swirdSdkPath}
 5. Press "Run..." or "Debug..."
+```
 
 You should see four console windows and one main browser window.
 
