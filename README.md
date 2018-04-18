@@ -40,7 +40,7 @@ To run the generated app, follow the steps below. You will find the same info in
 
 #### Configure the SDK:
 Change the `config.txt` file found in the SDK as follows:
-   * comment the GameDemo.jar line and add a new app line for this application (replace ${appName} with your chosen value above)
+   * comment the GameDemo.jar line and add a new app line for this application (replace ${appName} with value you chose above)
 ```
 ...
 # app,		GameDemo.jar,		   9000, 9000
@@ -60,7 +60,7 @@ mvn clean install
 This will package the app jar and copy it to the `apps` dir inside the Hashgraph sdk.
 
 #### Run from IntelliJ IDEA
-Replace ${appName} and ${swirdSdkPath} placeholders with your chosen values above.
+Replace ${appName} and ${swirdSdkPath} placeholders with values you chose above.
 ```
 1. Run -> Edit Configurations...
 2. Add new Application cofiguration
