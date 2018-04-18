@@ -36,4 +36,5 @@ NOTE: ```swirldsSdkPath``` must point to the Swirlds SDK directory where you fin
 
 You can now import the module into your preferred IDE or just take a look at what has been generated in the directory named after your ```artifactId```.
 
-To run the generated app, see the README.md inside the newly generated module. You will need to make a small config to the SDK (more details there).
+### Run It
+To run the generated app, follow the README.md inside the newly generated module. You will need to make a small config to the SDK (more details there).
